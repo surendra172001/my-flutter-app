@@ -40,3 +40,20 @@ git remote add origin https://github.com/surendra172001/my-flutter-app.git
 =here remote indicates working with url
 =add means we are connecting a new url
 =origin means the name of the url we are adding, so its like contact name corresponding to contact number
+
+#pushing the changes to remote connection
+git push origin master
+=here push indicates send the changes to the url
+=origin is the name of the url so data will be sent to url corresponding to name origin
+=master is the name of the branch to which we want to send the changes
+
+#head pointer
+=So head is the pointer which is pointing to a branch
+=And whatever commits we are going to make from now onwards are 
+=going to be made inside the branch being pointer by the head.
+
+#making pull request PR
+=We should create one new branch for each feature we add or a bug we fix.
+=If we don't do that and make all the commits(adding feature or removing bug) on the main branch
+=it would become difficult for other people to find the features which I added.
+=So the best way is to create a whole new dedicated branch for each feature and then send PR.
