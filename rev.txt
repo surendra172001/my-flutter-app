@@ -1,0 +1,42 @@
+This is a revision file
+
+kunal git video.
+
+#to unstage
+git restore --staged names.txt
+
+#number of insertions = number of lines added
+#number of delertions = number of lines deleted
+
+#find all commits 
+git log
+
+#removing a commit
+git reset "commit hash"
+=a commit can't be directly removed, since one commit depends on its previous commit.
+So if there are n commits and ith commit needs to be deleted then all the commits 
+from i to n needs to be unstaged so will have to go to the (i-1)th commit and
+then all those unstaged commits will be uncommited and the project will be restored 
+to the(i-1)th commit. All those commits from i to n can be preserved using stashing.
+
+#stashing the changes
+git stash
+=The changes that needs to stashed must be there in staging area.
+we don't want to commit the changes but also don't want to lose the 
+changes stashing can be done here.
+
+#restore from stash area
+git stash pop
+
+#clearing stash area
+git add .
+git stash clear
+=first we again put the changes in the staging area and then
+we stash them and finally clear them.
+
+
+#connecting to the remote repo
+git remote add origin https://github.com/surendra172001/my-flutter-app.git
+=here remote indicates working with url
+=add means we are connecting a new url
+=origin means the name of the url we are adding, so its like contact name corresponding to contact number
